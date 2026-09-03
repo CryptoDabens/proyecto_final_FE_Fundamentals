@@ -1,0 +1,38 @@
+body {
+    background-color: #e8e1d6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #a0153f;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    background-color: #9b6d22;
+    text-align: center;
+    padding: 100px;
+    font-family: "Trajan Pro", "Times New Roman", serif;
+    color: #0D1B3D;
+}
+
+.hero span {
+    font-family: "Playfair Display", serif;
+    color: #C79D3B;
+    background-color: #ad236f;
+}
+
+.logo {
+    display: flex;
+    text-align: left;
+    margin-bottom: 20px;
+    background-color: #15a066;
+    width: 10%;
+}
