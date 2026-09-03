@@ -6,11 +6,12 @@ body {
     align-items: center;
 }
 
-.header {
+header {
     background-color: #a0153f;
     height: 100px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -30,9 +31,8 @@ body {
 }
 
 .logo {
-    display: flex;
-    text-align: left;
-    margin-bottom: 20px;
+    align-items:center;
+    height: 100%;
     background-color: #15a066;
-    width: 10%;
+    display: flex;   
 }
