@@ -28,7 +28,6 @@ header .logo img {
 
 .btn {
     font-size: 20px;
-    
 }
 
 .nav {
@@ -71,11 +70,15 @@ header .logo img {
 }
 
 .hero img {
-    width: auto;
+    /*width: auto;*/
     height: 100%;
-    
     object-fit: contain;
 }
 
+.carousel-item img{
+    height: 400px;
+    object-fit: contain;
+
+}
 
 

@@ -38,7 +38,9 @@
     <main>
         
         <div class="hero">
-            <img src="lets-go-travel.jpg" alt="Imagen de lugares icónicos">
+            <img src="lets-go-travel.jpg" alt="Imagen de lugares icónicos" 
+            class="d-block w-100" 
+            alt="..." />
             <div>
                 <h1>V A G A R E       <span>T R A V E L S</span></h1>
                 <h2>by Gaby Guerra</h2>
@@ -50,8 +52,57 @@
         
     <hr />
     
-    <div>
+    <div class="row carrusel-principal">
         <p>Sección para paquetes por Destinos</p>
+        <div class="container overflow hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
+              <div class="carousel-item active">
+                <img 
+                    src="paris.jpg" 
+                    class="d-block w-100" 
+                    alt="..." 
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="roma.png" 
+                class="d-block w-100" 
+                alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="londres.jpg" 
+                class="d-block w-100" 
+                alt="..." />
+              </div>
+            </div>
+            
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         </div>
     </div>
     
     <div>
