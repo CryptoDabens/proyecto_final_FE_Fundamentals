@@ -19,7 +19,7 @@
 
 <body>
     <!-- ENCABEZADO -->
-    <header>    
+    <header id="inicio">    
         <!-- Logo -->
         <div class="logo">   
             <img src="img/logos/Logo Vagare travels Horizontal.png" alt="Logo de Vagare Travels">
@@ -30,11 +30,11 @@
             
             <div class="nav">
                 <nav>
-                    <a class="header-link" href="#">Inicio</a> 
-                    <a class="header-link" href="#">Destinos</a>
-                    <a class="header-link" href="#">Paquetes</a>
-                    <a class="header-link" href="#">Nosotros</a>
-                    <a class="header-link" href="#">Contacto</a>
+                    <a class="header-link" href="#inicio">Inicio</a> 
+                    <a class="header-link" href="#destinos">Destinos</a>
+                    <a class="header-link" href="#paquetes">Paquetes</a>
+                    <a class="header-link" href="#testimonios">Testimonios</a>
+                    <a class="header-link" href="#footer-contacto">Contacto</a>
                 </nav> 
             </div>
 
@@ -75,7 +75,7 @@
     <!-- Sección de Carruseles -->
         
         <!-- Carrusel de Destinos de Viaje -->
-        <div class="carrusel-principal"> <!-- 'row carrusel-principal' "row" estaba causando un desfase pequeño en los bordes en algunas resoluciones cuando se encogía la pagina. ChatGPT explicó que por los glutters que Bootstrap compensa. REcomendó eliminar row, se validó en el inspector del browser deshabilitando "margin-right" y "margin-Left"-->
+        <div id="destinos" class="carrusel-principal"> <!-- 'row carrusel-principal' "row" estaba causando un desfase pequeño en los bordes en algunas resoluciones cuando se encogía la pagina. ChatGPT explicó que por los glutters que Bootstrap compensa. REcomendó eliminar row, se validó en el inspector del browser deshabilitando "margin-right" y "margin-Left"-->
             <h2>Destinos populares</h2>
            
             <div class="container overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
@@ -133,7 +133,7 @@
  <br/>   
  <hr/>
     <!-- Carrusel de Paquetes de Viaje -->
-    <div class="carrusel-principal">
+    <div id="paquetes" class="carrusel-principal">
         <h2>Paquetes</h2>
         <div class="container overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
           <div id="carouselPaquetes" class="carousel slide">
@@ -199,7 +199,7 @@
     <br/>   
     <hr/>
     <!-- Carrusel de Paquetes de Testimonios -->
-    <div class="carrusel-principal">
+    <div id="testimonios" class="carrusel-principal">
         <h2>Lo que dicen nuestros viajeros</h2>
         <div class="container overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
           <div id="carouselTestimonios" class="carousel slide">
@@ -314,7 +314,7 @@
         </form>
         
         <!-- DATOS DE CONTACTO -->
-        <div class="footer-contacto">
+        <div id="footer-contacto">
           <h3>Contáctanos</h3>    
           <div><a href="tel:+52 669 1230970">+52 669 123 0970</a></div>
             <div><a href="mailto:contacto@vagaretravels.com">contacto@vagaretravels.com</a></div>
