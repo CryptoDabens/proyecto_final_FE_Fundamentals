@@ -1,55 +1,61 @@
 body {
-    background-color: #e8e1d6;
+    background-color:#FEFDFD/* #e8e1d6;*/
     margin: 0;
         
 }
 
 header {
-    background-color: #a0153f;
+    background-color: #0D1B3D;
     display: flex;
     align-items: center;
     justify-content:space-between;
     padding: 20px;
 }
 
-header .logo img {
-    background-color: #dc16f7;
-    height: 100px;
+.logo { 
+    width:30%
+    max-width: 305px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* header .logo img {
+    height:auto
     
-}
-
-.cotiza{
-   
-    height: fit-content;
-    align-items:center;
-    padding-left: 20px;
     
+} */
+
+.cotiza button {
+    margin: 10px;   
 }
 
-.btn {
-    font-size: 20px;
-}
-
-.nav {
+.nav nav {
     display: flex;
-    align-items: center;
     gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.nav-cotiza{
+.nav-cotiza {
     display: flex;
-    align-items: left;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .header-link {
     font-size: 20px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
     color:#d7e8d6
+    
 }
 
-@media (max-width: 100px) {
+@media (max-width: 768px) {
   .logo {
     display: none;
   }
@@ -77,6 +83,15 @@ header .logo img {
     max-height: 100%;    
 }
 
+.hero-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
 .hero-image {
     display: flex;
     justify-content:center;
@@ -93,8 +108,9 @@ header .logo img {
     gap: 20px;
 }
 
+
 .hero h1 {
-    
+    font-size: 5em;
     margin-top: 20px;
 }
 
@@ -124,6 +140,23 @@ h2 {
 }
 
 
-/*footer {
+footer {
     background-color:#0D1B3D
-}*/
+}
+
+footer label {
+    color: #C79D3B;
+    font-size: 1.25rem;
+    text-align: left;
+    display: block; /* Asegura que el label ocupe toda la línea */
+    margin-top: 10px;
+}
+
+
+footer p {
+    color: #C79D3B;
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
