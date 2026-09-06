@@ -138,12 +138,20 @@ h2 {
 
 }
 
+/* SECCIÓN FOOTER */
 
 footer {
-    background-color:#0D1B3D
+    background-color:#0D1B3D;
+    padding: 40px 60px 20px;
+    
 }
 
-footer label {
+.footer-contacto h3, a {
+    color: white;
+    padding-top: 20px;
+}
+
+.formulario-grupo label {
     color: #C79D3B;
     font-size: 1.25rem;
     text-align: left;
@@ -151,11 +159,27 @@ footer label {
     margin-top: 10px;
 }
 
+.formulario-lead h3 {
+    color:white;
+}
 
-footer p {
+.datos-lead {
+    width: 100%;
+    max-width: 450px;
+}
+
+
+.copyright {
     color: #C79D3B;
     font-size: 1rem;
-    text-align: right;
+    text-align: center;
     margin-top: 10px;
     margin-right: 20px;
 }
+
+/* .footer-contenido {
+    display:flex;
+    justify-content: space-between;  
+    align-items: flex-start;
+
+} */

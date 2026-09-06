@@ -286,39 +286,44 @@
     <!-- PIE DE PAGINA -->
   
     <footer>
-        <div class="footer-contacto">
-            <div><a href="tel:+6691230970"></a>+669 123 0970</a></div>
-            <div><a href="mailto:contacto@vagaretravels.com">contacto@vagaretravels.com</a></div>
-        </div>
+      <div class="footer-contenido">
         
         <!-- FORMULARIO PARA LEAD -->
-        <form>
-            <div class="datos-lead">
+        <form class="formulario-lead">
+          <h3>Planeemos tu próxima experiencia</h3>  
+          <div class="datos-lead">
                 <div class="formulario-grupo">
                     <label for="Nombre">Nombre: </label>
                     <input required id="nombre-lead" type="text" /> <!-- input de texto | "required" para hacer obligatorio" -->
                 </div>
                 <div class="formulario-grupo">
-                    <label for="Teléfono">Teléfono: </label>
-                    <input required id="telefono-lead" type="number" />
+                    <label for="telefono-lead">Teléfono:</label>
+                    <input required id="telefono-lead" type="tel" />
                 </div>
                 <div class="formulario-grupo">
-                    <label for="Email">Email: </label>
-                    <input required id="email-lead" cols="50"type="email" />
+                    <label for="email-lead">Email:</label>
+                    <input required id="email-lead" type="email" />
                 </div>
             
                 <div class="formulario-grupo">
                     <label for="comentarios">Cuéntanos tu próxima experiencia:</label>
                     <textarea name="comentarios" id="comentarios" cols="50" rows="4"></textarea> 
                 </div>
-                <button> Enviar </button>
-            </div>    
-        </div>
+                <button class="btn btn-secondary type="submit"> Enviar </button>
+          </div>    
         </form>
-
-        <hr>
         
-        <p>&copy; 2025 Vagare Travels. Todos los derechos reservados.</p>
+        <!-- DATOS DE CONTACTO -->
+        <div class="footer-contacto">
+          <h3>Contáctanos</h3>    
+          <div><a href="tel:+52 669 1230970">+52 669 123 0970</a></div>
+            <div><a href="mailto:contacto@vagaretravels.com">contacto@vagaretravels.com</a></div>
+      </div>
+       
+      <hr>
+      <!-- COPYRIGHT -->
+      <p class="copyright"> &copy; 2025 Vagare Travels. Todos los derechos reservados.</p>
+      
     </footer>
     <!-- FIN PIE DE PAGINA -->
 </body>
