@@ -131,6 +131,20 @@ h2 {
     flex-wrap:wrap
 }
 
+/* SECCION NOSOTROS */ 
+.contenedor-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: center; 
+}
+
+.fotografía-persona {
+    overflow:hidden;
+    
+}
+
+/* SECCION CARROSELES */
 
 .carousel-item img{
     height: 400px;
@@ -138,7 +152,7 @@ h2 {
 
 }
 
-/* SECCIÓN FOOTER */
+/* SECCION FOOTER */
 
 footer {
     background-color:#0D1B3D;

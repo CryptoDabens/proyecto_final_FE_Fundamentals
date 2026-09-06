@@ -18,64 +18,82 @@
 </head>
 
 <body>
-    <!-- ENCABEZADO -->
-    <header id="inicio">    
-        <!-- Logo -->
-        <div class="logo">   
-            <img src="img/logos/Logo Vagare travels Horizontal.png" alt="Logo de Vagare Travels">
-        </div>
-        
-        <!-- Contenedor para barra de navegación y botón cotiza -->
-        <div class="nav-cotiza">
-            
-            <div class="nav">
-                <nav>
-                    <a class="header-link" href="#inicio">Inicio</a> 
-                    <a class="header-link" href="#destinos">Destinos</a>
-                    <a class="header-link" href="#paquetes">Paquetes</a>
-                    <a class="header-link" href="#testimonios">Testimonios</a>
-                    <a class="header-link" href="#footer-contacto">Contacto</a>
-                </nav> 
-            </div>
+  <!-- ENCABEZADO -->
+  <header id="inicio">    
+    <!-- Logo -->
+    <div class="logo">   
+      <img src="img/logos/Logo Vagare travels Horizontal.png" alt="Logo de Vagare Travels">
+    </div>
+       
+    <!-- Contenedor para barra de navegación y botón cotiza -->
+    <div class="nav-cotiza">
+      <div class="nav">
+        <nav>
+          <a class="header-link" href="#inicio">Inicio</a> 
+          <a class="header-link" href="#destinos">Destinos</a>
+          <a class="header-link" href="#paquetes">Paquetes</a>
+          <a class="header-link" href="#testimonios">Testimonios</a>
+          <a class="header-link" href="#footer-contacto">Contacto</a>
+        </nav> 
+      </div>
 
-            <div class="cotiza">
-                <button class="btn btn-primary">Cotiza tu viaje</button>
-            </div>
-       </div>
-       <!-- ---- -->
-    </header>
-    <!-- FIN ENCABEZADO -->    
+      <div class="cotiza">
+        <button class="btn btn-primary">Cotiza tu viaje</button>
+      </div>
+    </div>
+  </header>
+  
     
     <!-- CONTENIDO PRINCIPAL -->
-    <main>
-    <!-- Sección Hero  -->
-        <section class="hero">
-            <div class="hero-image">
-                <img src="img/hero/img-hero-sin-texto.jpg" 
-                alt="Imagen de lugares icónicos" 
-                class="d-block w-100" 
-                />
-            </div>    
+  <main>
+  <!-- Sección Hero  -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src="img/hero/img-hero-sin-texto.jpg" 
+        alt="Imagen de lugares icónicos" 
+        class="d-block w-100" 
+        />
+      </div>    
             
-            <div class="hero-contenido">
-                <div class="hero-text">
-                    <h1>VAGARE <span>TRAVELS</span></h1>
-                    <h2>Descubre el mundo · Viaja libre · Crea tu historia</h2>
-                </div>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Cotiza tu viaje</a>
-                    <a href="#" class="btn btn-secondary">Encuentra ofertas</a>
-                </div>
-            </div>
-        </section>
-      
-        <br/>   
-        <hr/>
+      <div class="hero-contenido">
+        <div class="hero-text">
+          <h1>VAGARE <span>TRAVELS</span></h1>
+          <h2>Descubre el mundo · Viaja libre · Crea tu historia</h2>
+        </div>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">Cotiza tu viaje</a>
+          <a href="#" class="btn btn-secondary">Encuentra ofertas</a>
+        </div>
+      </div>
+    </section>
+    <br/>   
+    <hr/>
     
+    <!-- Sección de Nosotros -->
+    <section id="nosotros">
+      <div class="contenedor-nosotros">
+        <div class="fotografia-persona">
+          <img src="img/GG.jpg">
+        </div>
+        <div class="declaratoria">
+          <span>Sobre nosotros</span>
+          <h2>Tu asesora de viajes de confianza</h2>
+          <p>Soy Gaby Guerra y fundé Vagare Travels con una idea simple: viajar no debería ser complicado. Me encargo de cada detalle para que tú solo te ocupes de disfrutar.</p>
+          <ul>
+            <li>Asesoría personalizada sin costo: escuchamos primero, proponemos después.</li>
+            <li>Un solo contacto antes, durante y después de tu viaje, por WhatsApp.</li>
+            <il>Alianzas con mayoristas, aerolíneas y navieras para conseguir la mejor tarifa.</i>
+            <li>Planes de pago y meses sin intereses con tarjetas participantes.</li>
+            <p>— Gaby Guerra</p>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- Sección de Carruseles -->
-        
+    <section class="todos-carruseles">      
         <!-- Carrusel de Destinos de Viaje -->
-        <div id="destinos" class="carrusel-principal"> <!-- 'row carrusel-principal' "row" estaba causando un desfase pequeño en los bordes en algunas resoluciones cuando se encogía la pagina. ChatGPT explicó que por los glutters que Bootstrap compensa. REcomendó eliminar row, se validó en el inspector del browser deshabilitando "margin-right" y "margin-Left"-->
+        <section id="destinos" class="carrusel-principal"> <!-- 'row carrusel-principal' "row" estaba causando un desfase pequeño en los bordes en algunas resoluciones cuando se encogía la pagina. ChatGPT explicó que por los glutters que Bootstrap compensa. REcomendó eliminar row, se validó en el inspector del browser deshabilitando "margin-right" y "margin-Left"-->
             <h2>Destinos populares</h2>
            
             <div class="container overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
@@ -128,12 +146,12 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-         </div>
+        </section>
     </div>
- <br/>   
- <hr/>
+    <br/>   
+    <hr/>
     <!-- Carrusel de Paquetes de Viaje -->
-    <div id="paquetes" class="carrusel-principal">
+    <section id="paquetes" class="carrusel-principal">
         <h2>Paquetes</h2>
         <div class="container overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
           <div id="carouselPaquetes" class="carousel slide">
@@ -194,12 +212,12 @@
             </button>
           </div>
          </div>
-    </div>
+    </section>
 
     <br/>   
     <hr/>
     <!-- Carrusel de Paquetes de Testimonios -->
-    <div id="testimonios" class="carrusel-principal">
+    <section id="testimonios" class="carrusel-principal">
         <h2>Lo que dicen nuestros viajeros</h2>
         <div class="container overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
           <div id="carouselTestimonios" class="carousel slide">
@@ -272,11 +290,11 @@
             </button>
           </div>
          </div>
-    </div>
+    </section>
 
     
-    
-    </main>
+  </section>  
+  </main>
   
     <!-- FIN DE CONTENIDO PRINCIPAL -->
   
