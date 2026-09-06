@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vagare Travels</title>
+    
+    
+    <!-- Enlaces a CSS, Bootstrap CSS y JS -->
     <link rel="stylesheet" href="main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -15,81 +18,92 @@
 </head>
 
 <body>
+    <!-- ENCABEZADO -->
     <header>    
-        
+        <!-- Logo -->
         <div class="logo">   
             <img src="\img\logos\IMG Vagare Logo simple.jpeg" alt="Logo de Vagare Travels">
         </div>
         
+        <!-- Contenedor para barra de navegación y botón cotiza -->
         <div class="nav-cotiza">
             
-
-        <div class="nav">
-            <nav>
-                <a class="header-link" href="#">Inicio</a> 
-                <a class="header-link" href="#">Destinos</a>
-                <a class="header-link" href="#">Paquetes</a>
-                <a class="header-link" href="#">Nosotros</a>
-                <a class="header-link" href="#">Contacto</a>
-            </nav> 
-       </div>
-
-        <div class="cotiza">
-            <button border-left="20" class="btn">Cotiza tu viaje</button>
-       </div>
-       </div>
-    </header>
-        
-    
-    
-    <main>
-        
-        <div class="hero">
-            <img src="\img\hero\lets-go-travel.jpg" alt="Imagen de lugares icónicos" 
-            class="d-block w-100" 
-            alt="..." />
-            <div>
-                <h1>V A G A R E       <span>T R A V E L S</span></h1>
-                <h2>by Gaby Guerra</h2>
-                <h2>Lo sueñas, lo hacemos realidad</h2>
+            <div class="nav">
+                <nav>
+                    <a class="header-link" href="#">Inicio</a> 
+                    <a class="header-link" href="#">Destinos</a>
+                    <a class="header-link" href="#">Paquetes</a>
+                    <a class="header-link" href="#">Nosotros</a>
+                    <a class="header-link" href="#">Contacto</a>
+                </nav> 
             </div>
-        </div>
-        
-    </main>
-        
-    <hr />
+
+            <div class="cotiza">
+                <button border-left="20" class="btn">Cotiza tu viaje</button>
+            </div>
+       </div>
+       <!-- ---- -->
+    </header>
+    <!-- FIN ENCABEZADO -->    
     
-    <div class="row carrusel-principal">
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- Sección Hero  -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="\img\hero\img-hero-sin-texto.jpg" 
+                alt="Imagen de lugares icónicos" 
+                class="d-block w-100" 
+                />
+            </div>    
+            
+            <div class="hero-contenido">
+                <div class="hero-text">
+                    <h1>VAGARE <span>TRAVELS</span></h1>
+                    <h2>Descubre el mundo · Viaja libre · Crea tu historia</h2>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Cotiza tu viaje</a>
+                    <a href="#" class="btn btn-secondary">Encuentra ofertas</a>
+                </div>
+            </div>
+        </section>
+      
+        <br/>   
+        <hr/>
+
+    <!-- Carrusel de Destinos de Viaje -->
+    <div class="carrusel-principal"> <!-- 'row carrusel-principal' "row" estaba causando un desfase pequeño en los bordes en algunas resoluciones cuando se encogía la pagina. ChatGPT explicó que por los glutters que Bootstrap compensa. REcomendó eliminar row, se validó en el inspector del browser deshabilitando "margin-right" y "margin-Left"-->
         <h2>Destinos populares</h2>
-        <div class="container overflow hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
-          <div id="carouselExample" class="carousel slide">
+           
+        <div class="container overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
+          <div id="carouselDestinos" class="carousel slide">
             <div class="carousel-inner overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
               <div class="carousel-item active">
                 <img 
                     src="\img\destinations\paris.jpg" 
                     alt="Foto de Paris"
                     class="d-block w-100" 
-                    alt="..." 
-                />
+                    />
               </div>
               <div class="carousel-item">
                 <img src="\img\destinations\roma.png" 
                 alt="Foto de Roma"
                 class="d-block w-100" 
-                alt="..." />
+                />
               </div>
               <div class="carousel-item">
                 <img src="\img\destinations\londres.jpg" 
                 alt="Foto de Londres"
                 class="d-block w-100" 
-                alt="..." />
-              </div>
+                />
+               </div>
             </div>
             
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExample"
+              data-bs-target="#carouselDestinos"
               data-bs-slide="prev"
             >
               <span
@@ -102,7 +116,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExample"
+              data-bs-target="#carouselDestinos"
               data-bs-slide="next"
             >
               <span
@@ -114,29 +128,184 @@
           </div>
          </div>
     </div>
-    
-    <div>
-        <h2>Categoría de viaje</h2>
-    </div>
+ <br/>   
+ <hr/>
+    <!-- Carrusel de Paquetes de Viaje -->
+    <div class="carrusel-principal">
+        <h2>Paquetes</h2>
+        <div class="container overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
+          <div id="carouselPaquetes" class="carousel slide">
+            <div class="carousel-inner overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
+              <div class="carousel-item active">
+                <img 
+                    src="\img\packages\Paris-en-pareja.png" 
+                    alt="Foto de pareja en paris"
+                    class="d-block w-100" 
+                     
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="\img\packages\Pareja-mayor-crucero.jpg" 
+                alt="Foto de Pareja mayor subiendo a crucero"
+                class="d-block w-100" 
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="\img\packages\Cairo-2-parejas.jpg" 
+                alt="Foto de 2 parejas en Cairo"
+                class="d-block w-100" 
+                />
+              </div>
 
-    <div>
-        <h2>Testimonios</h2>
-    </div>
-
-    <footer>
-        <div>
-            <div>Contactame:</div>
-            <div>Mobile: +669 123 9999 </div>
-            <div>
-                email: <a href="#">contacto@vagaretravels.com</a> 
+              <div class="carousel-item">
+                <img src="\img\packages\Familia-en-disney.jpg" 
+                alt="Foto de Familia en Disney"
+                class="d-block w-100" 
+                />
+              </div>
             </div>
+            
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselPaquetes"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselPaquetes"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         </div>
+    </div>
+
+    <br/>   
+    <hr/>
+    <!-- Carrusel de Paquetes de Testimonios -->
+    <div class="carrusel-principal">
+        <h2>Testimonios</h2>
+        <div class="container overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
+          <div id="carouselTestimonios" class="carousel slide">
+            <div class="carousel-inner overflow-hidden"> <!-- se agregó overflow-hidden para ocultar el contenido que excede el contenedor -->
+              <div class="carousel-item active">
+                <img 
+                    src="\img\packages\Paris-en-pareja.png" 
+                    alt="Foto de pareja en paris"
+                    class="d-block w-100" 
+                     
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="\img\packages\Pareja-mayor-crucero.jpg" 
+                alt="Foto de Pareja mayor subiendo a crucero"
+                class="d-block w-100" 
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="\img\packages\Cairo-2-parejas.jpg" 
+                alt="Foto de 2 parejas en Cairo"
+                class="d-block w-100" 
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img src="\img\packages\Familia-en-disney.jpg" 
+                alt="Foto de Familia en Disney"
+                class="d-block w-100" 
+                />
+              </div>
+            </div>
+            
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselTestimonios"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="false"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselTestimonios"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="false"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         </div>
+    </div>
+
+    
+    
+    </main>
+  
+    <!-- FIN DE CONTENIDO PRINCIPAL -->
+  
+    <br/>          
+    <hr />
+  
+    <!-- PIE DE PAGINA -->
+  
+    <footer>
+        <div class="footer-contacto">
+            <div>+669 123 0970 </div>
+            <div><a href="mailto:contacto@vagaretravels.com">contacto@vagaretravels.com</a> </div>
         </div>
+        
+        <!-- FORMULARIO PARA LEAD -->
+        <form>
+            <div class="datos-lead">
+                <div class="formulario-grupo">
+                    <label for="Nombre">Nombre: </label>
+                    <input required id="nombre-lead" type="text" /> <!-- input de texto | "required" para hacer obligatorio" -->
+                </div>
+                <div class="formulario-grupo">
+                    <label for="Teléfono">Teléfono: </label>
+                    <input required id="telefono-lead" type="number" />
+                </div>
+                <div class="formulario-grupo">
+                    <label for="Email">Email: </label>
+                    <input required id="email-lead" type="email" />
+                </div>
+            
+                <div class="formulario-grupo">
+                    <label for="comentarios">Cuéntanos tu próxima experiencia:</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="4"></textarea> 
+                </div>
+                <button> Enviar </button>
+            </div>    
+        </div>
+        </form>
+
         <hr>
+        
         <p>&copy; 2025 Vagare Travels. Todos los derechos reservados.</p>
-    
-    
-    
-    
     </footer>
+    <!-- FIN PIE DE PAGINA -->
 </body>
 </html>

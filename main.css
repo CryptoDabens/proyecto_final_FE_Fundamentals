@@ -1,7 +1,7 @@
 body {
     background-color: #e8e1d6;
     margin: 0;
-    
+        
 }
 
 header {
@@ -55,25 +55,67 @@ header .logo img {
   }
 }
 
+/* SECCION HERO */
+
 .hero {
-    background-color: #9b6d22;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 100px;
     font-family: "Trajan Pro", "Times New Roman", serif;
     color: #0D1B3D;
 }
 
-.hero span {
+.hero h1 span {
     font-family: "Playfair Display", serif;
     color: #C79D3B;
-    background-color: #ad236f;
+    
 }
 
-.hero img {
-    /*width: auto;*/
-    height: 100%;
-    object-fit: contain;
+.hero-image img {
+    max-height: 100%;    
 }
+
+.hero-image {
+    display: flex;
+    justify-content:center;
+    max-width: 100%;
+    height: auto;        
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.hero h1 {
+    
+    margin-top: 20px;
+}
+
+.hero h2 {
+    font-size: 1.25em;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap:wrap
+}
+
 
 .carousel-item img{
     height: 400px;
@@ -82,3 +124,6 @@ header .logo img {
 }
 
 
+/*footer {
+    background-color:#0D1B3D
+}*/
