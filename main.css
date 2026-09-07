@@ -139,9 +139,37 @@ h2 {
     align-items: center; 
 }
 
-.fotografía-persona {
-    overflow:hidden;
+.fotografia-persona img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover; 
+    display: block;
+    padding: 20px;
     
+}
+
+.declaratoria h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    ;
+
+}
+
+
+.declaratoria p {
+    
+    font-style: italic;
+    font-size: 1.5rem;
+
+}
+
+.firma p {
+    
+    font-style: italic;
+    color:#C79D3B;
+    font-size: 1.5rem;
+
 }
 
 /* SECCION CARROSELES */
@@ -151,6 +179,8 @@ h2 {
     object-fit: contain;
 
 }
+
+
 
 /* SECCION FOOTER */
 
