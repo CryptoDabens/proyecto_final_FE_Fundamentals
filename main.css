@@ -1,5 +1,5 @@
 body {
-    background-color:#FEFDFD/* #e8e1d6;*/
+    background-color:#FEFDFD; 
     margin: 0;
 }
 
@@ -12,7 +12,7 @@ header {
 }
 
 .logo { 
-    width:30%
+    width:30%;
     max-width: 305px;
 }
 
@@ -50,7 +50,7 @@ header {
 
 .header-link {
     font-size: 20px;
-    color:#d7e8d6
+    color:#d7e8d6;
     
 }
 
@@ -128,7 +128,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap:wrap
+    flex-wrap:wrap;
 }
 
 /* SECCION NOSOTROS */ 
@@ -152,8 +152,6 @@ h2 {
     font-family: "Playfair Display", Georgia, serif;
     font-style: italic;
     font-size: 1.5rem;
-    ;
-
 }
 
 
